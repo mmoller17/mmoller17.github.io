@@ -89,8 +89,11 @@ img {
 
 /* begin portfolio gallery styles */
 
-.portfolio-gallery {
+.portfolio-container {
   margin: 1rem auto 0 auto;
+}
+
+.portfolio-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 0.5rem;
@@ -114,9 +117,37 @@ img {
   transform: scale(1.5);
 }
 
-.portfolio-gallery h1 {
+.portfolio-container h1 {
   font-size: 2rem;
   line-height: 2rem;
+  padding-left: 1rem;
+}
+
+/* begin about section styles */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem auto 0 auto;
+}
+.about-text {
+  margin: 0 auto;
+  padding-top: 0 0.5rem;
+}
+.about-text h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.about-image img {
+  height: 100%;
+  line-height: 2rem;
+}
+.about-social {
+  display: flex;
+  justify-content: start;
+}
+.about-social a {
+  color: black;
+  padding-left: 0 1rem 1rem 1rem;
 }
 
 /* begin media queries for tablets and desktop */
@@ -131,6 +162,18 @@ img {
     font-size: 2rem;
     line-height: 2rem;
   }
+  .portfolio-container h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .about-text h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 
 @media (min-width: 920px) {
@@ -141,5 +184,9 @@ img {
   .hero-text {
     font-size: 4rem;
     line-height: 4rem;
+  }
+  .portfolio-container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }

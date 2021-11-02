@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/css/glightbox.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
   </head>
   <body>
     <header class="hero-box">
@@ -14,7 +15,7 @@
         <img
           class="hero-image"
           src="img/20210928 Moller Maura website image.jpg"
-          alt="An image of a misty forest the colors are shades of green grey and brown"
+          alt="An image of a misty forest. the colors are shades of green, grey, and brown"
         />
       </section>
       <section class="hero-text-box">
@@ -22,16 +23,19 @@
         <p class="hero-text">Welcome!</p>
       </section>
     </header>
+
     <!-- Begin portfolio gallery-->
-    <section class="portfolio-gallery">
+
+    <section class ="portfolio-container">
       <h1>Portfolio</h1>
+      <section class="portfolio-gallery"></section>
       <div class="gallery-item">
         <a
           class="glightbox"
-          href="img/20210831 Moller Maura project 1 collage 2.png"
+          href="img/20210831 Moller Maura project 1 collage 2.jpg"
         >
           <img
-            src="img/20210831 Moller Maura project 1 collage 2.png"
+            src="img/20210831 Moller Maura project 1 collage 2.jpg"
             alt="a vertical collage showing a walkway patterned with grey and black bricks a brown sidewalk with the silouette of a bird and it's shadow flying over it and green grass"
             class="gallery-img"
           />
@@ -52,10 +56,10 @@
       <div class="gallery-item">
         <a
           class="glightbox"
-          href="img/20210920 Moller Maura atmospheric perspective.png"
+          href="img/20210920 Moller Maura atmospheric perspective.jpg"
         >
           <img
-            src="img/20210920 Moller Maura atmospheric perspective.png"
+            src="img/20210920 Moller Maura atmospheric perspective.jpg"
             alt="a ditigal collage of a lake with a blue sky there are three hands coming out of the lake the farthest away is holding a skyscraper the middle one is holding a white building and the closest one holding a cat"
             class="gallery-img"
           />
@@ -76,10 +80,10 @@
       <div class="gallery-item">
         <a
           class="glightbox"
-          href="img/20211015 Moller Maura final optical texture project.png"
+          href="img/20211015 Moller Maura final optical texture project.jpg"
         >
           <img
-            src="img/20211015 Moller Maura final optical texture project.png"
+            src="img/20211015 Moller Maura final optical texture project.jpg"
             alt="charcoal cloth studies hung up on a wall to look like real hanging cloth"
             class="gallery-img"
           />
@@ -88,10 +92,10 @@
       <div class="gallery-item">
         <a
           class="glightbox"
-          href="img/20211020 Sculpture Center Color Project.png"
+          href="img/20211020 Sculpture Center Color Project.jpg"
         >
           <img
-            src="img/20211020 Sculpture Center Color Project.png"
+            src="img/20211020 Sculpture Center Color Project.jpg"
             alt="a collage showing green plants and a brick wall meshing together in wierd ways there are two large yellow flowers with multiple layers"
             class="gallery-img"
           />
@@ -100,16 +104,47 @@
       <div class="gallery-item">
         <a
           class="glightbox"
-          href="img/Moller Maura group texture installation.png"
+          href="img/Moller Maura group texture installation.jpg"
         >
           <img
-            src="img/Moller Maura group texture installation.png"
+            src="img/Moller Maura group texture installation.jpg"
             alt="a wall with a blank square surrounding the square is an ombre effect using pinned up charcoal textures of varying shades"
             class="gallery-img"
           />
         </a>
       </div>
     </section>
+  </section>
+
+<!-- Begin About Section -->
+<section class="about-container">
+<section class="about-text">
+  <h1>
+    Maura is an artist and designer in their freshman year at the Cleveland Institute of Art. 
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam laborum eos voluptatem. Iure quod eveniet fugit quidem, sit cum cupiditate accusantium, et, repellendus unde ratione?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione repellendus repellat soluta tempore explicabo nesciunt!
+    </p>
+    <p>
+      Email me at mmoller@student.cia.edu
+    </p>
+  </h1>
+    <section class="about-social">
+        <a href="https://instagram.com/mablung.art" aria-label="link to instagram"> 
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+    </section>
+    <section class="about-social">
+      <a href="https://github.com/mmoller" aria-label="link to instagram"> 
+      <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+  </section>
+</section>
+</section class="about-image">
+<img src="img/profile-picture" alt="nothing is here currently but it is a space intended for a profile picture">
+
     <script src="js/glightbox.min.js"></script>
     <script type=text/javascript>
     const lightbox = GLightbox({ loop:true });
