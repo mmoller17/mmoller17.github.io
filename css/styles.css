@@ -5,6 +5,13 @@ html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: initial;
+  }
 }
 
 body {
@@ -27,6 +34,111 @@ img {
 
 /* end basic html styles */
 
+/* begin nav bar styles */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+  overflow: hidden;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo,
+.nav-menu {
+  text-transform: uppercase;
+}
+
+.logo,
+.nav-item {
+  white-space: nowrap;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.social-nav-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 10%;
+}
+
+.logo a,
+.nav-menu a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  padding: 0.8rem;
+  color: black;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-menu a {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  border-bottom: 1px solid #fff;
+  transition: all ease 0.1s;
+}
+
+.nav-menu a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.top-nav {
+  background: none;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  align-content: top;
+  position: fixed;
+  top: 0;
+  height: 8rem;
+}
+
+@supports (positioon: sticky) {
+  .top-nav {
+    position: -webkit-sticky; /* only for safari */
+    position: sticky;
+  }
+}
+
+.top-nav .logo a,
+.top-nav .nav-menu a {
+  color: white;
+}
+
+.top-nav.nav-menu a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.top-nav .nav-menu a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.section-scroll {
+  scroll-margin-top: 9rem;
+  padding: 0 1rem 4rem 1rem;
+}
+
+/* end nav bar styles */
+
 .hero-box {
   display: grid;
   grid-template-columns: 1fr;
@@ -37,6 +149,7 @@ img {
   align-items: start;
   height: 100%;
   width: 100%;
+  margin-top: -8rem;
 }
 
 .hero-image-box {
@@ -174,6 +287,12 @@ img {
     font-size: 3rem;
     line-height: 3rem;
   }
+  .nav-menu {
+    padding: 0 1rem;
+  }
+  .nav-item {
+    flex: 1 1;
+  }
 }
 
 @media (min-width: 920px) {
@@ -188,5 +307,17 @@ img {
   .portfolio-container h1 {
     font-size: 5rem;
     line-height: 5rem;
+  }
+  .nav-bar {
+    justify-content: space-between;
+    padding: 2rem 0;
+    line-height: 1rem;
+  }
+  .nav-menu {
+    width: auto;
+    justify-self: end;
+  }
+  .top-nav {
+    width: 100%;
   }
 }
