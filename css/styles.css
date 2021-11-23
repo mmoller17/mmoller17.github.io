@@ -112,7 +112,7 @@ img {
   height: 8rem;
 }
 
-@supports (positioon: sticky) {
+@supports (position: sticky) {
   .top-nav {
     position: -webkit-sticky; /* only for safari */
     position: sticky;
@@ -167,7 +167,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(125, 200, 150, 0.3);
+  background-color: rgba(125, 200, 150, 1);
 }
 
 .hero-image {
@@ -260,7 +260,7 @@ img {
 }
 .about-social a {
   color: black;
-  padding-left: 0 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 /* begin media queries for tablets and desktop */
