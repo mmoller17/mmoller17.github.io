@@ -252,7 +252,7 @@ img {
 }
 .about-image img {
   height: 100%;
-  line-height: 2rem;
+  object-fit: contain;
 }
 .about-social {
   display: flex;
